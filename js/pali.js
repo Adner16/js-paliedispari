@@ -12,14 +12,15 @@ paliCheck(userWord);
 
     function paliCheck(parola){
         for (let i = parola.length - 1; i >= 0; i--){
-            wordReverse = parola.charAt(i);
+            wordReverse += parola.charAt(i);
             console.table(`parola al contrario è ${wordReverse}`);
         }
-        for (let i = 0; i < parola.length; i++){
-            wordForward = parola.charAt(i);
-            console.log(`parola dritta è ${wordForward}`)
-        }
-        if (wordForward == wordReverse){
+        // for (let i = 0; i < parola.length; i++){
+        //     wordForward = parola.charAt(i);
+        //     console.log(`parola dritta è ${wordForward}`)
+        // }
+
+        if (userWord == wordReverse){
             alert(`la parola ${userWord} è palindroma`);
         } else { 
             alert(`la parola ${userWord} non è palindroma`)
