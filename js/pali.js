@@ -10,20 +10,21 @@ paliCheck(userWord);
 
 //2
 
+
+
     function paliCheck(parola){
+
+        let wordReverse = '';
+
         for (let i = parola.length - 1; i >= 0; i--){
             wordReverse += parola.charAt(i);
-            console.table(`parola al contrario è ${wordReverse}`);
         }
-        // for (let i = 0; i < parola.length; i++){
-        //     wordForward = parola.charAt(i);
-        //     console.log(`parola dritta è ${wordForward}`)
-        // }
+        console.log(`parola al contrario è ${wordReverse}`);
 
-        if (userWord == wordReverse){
-            alert(`la parola ${userWord} è palindroma`);
+        if (parola == wordReverse){
+            alert(`la parola ${parola} è palindroma`);
         } else { 
-            alert(`la parola ${userWord} non è palindroma`)
+            alert(`la parola ${parola} non è palindroma`)
         }
     }
    
